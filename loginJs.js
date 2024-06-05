@@ -4,11 +4,12 @@ document.addEventListener("DOMContentLoaded", () => {
     button.addEventListener("click", () => {
         const user = document.getElementById("user").value;
         const password = document.getElementById("password").value;
+        localStorage.setItem("usuario", user)
 
         fetch('apiPrueba.json')
             .then(response => {
                 if (!response.ok) {
-                    throw new Error('Network response was not ok');
+                    throw new Error('Netnwork response was ot ok');
                 }
                 return response.json();
             })

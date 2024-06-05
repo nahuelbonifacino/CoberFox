@@ -2,14 +2,58 @@
     "usuarios": [
       {
         "user": "1",
-        "password": "1"
+        "userEm" : "Bfdafsasony",
+        "password": "1",
+        "historial": [
+          {
+            "n":1,
+            "Matricula": 222,
+            "Empresa" :"coberfox",
+            "Bruto" : 9000,
+            "Tara" : 5000,
+            "Tara_Manual" : 0,
+            "Neto" : 0,
+            "Pesada_Completa" : 4000,
+            "Fecha_Primera" : "1 De Mayo 2021",
+            "Fecha_Segunda" : "16 De Marzo 2022"
+            
+          },
+          {
+            "n":2,
+            "Matricula": 25223,
+            "Empresa" :"coberfox2",
+            "Bruto" : 8000,
+            "Tara" : 5000,
+            "Tara_Manual" : 0,
+            "Neto" : 0,
+            "Pesada_Completa" : 3000,
+            "Fecha_Primera" : "1 de Marzo 2023",
+            "Fecha_Segunda" : "2 de enero de 2024"
+            
+          },
+          {
+            "n":3,
+            "Matricula": 12,
+            "Empresa" :"cobesadox2",
+            "Bruto" : 11000,
+            "Tara" : 15000,
+            "Tara_Manual" : 11,
+            "Neto" : 10,
+            "Pesada_Completa" : 3000,
+            "Fecha_Primera" : "1 de Marzo 2023",
+            "Fecha_Segunda" : "2 de enero de 2024"
+            
+          }
+        ]
       },
       {
         "user": "usuario2",
+        "userEm" : "Usua2ana",
         "password": "contraseña2"
       },
       {
         "user": "usuario3",
+        "userEm" : "FDFny3adg",
         "password": "contraseña3"
       }
     ]
