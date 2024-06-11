@@ -17,16 +17,42 @@ document.addEventListener("DOMContentLoaded", () =>{
             });
 
     const divInfo = document.getElementById("info");
-
+    const miniMenu = document.getElementById("miniMenu")
     const menuPesa = document.getElementById("pesar");
     const config = document.getElementById("confi");
     const historial = document.getElementById("historial")
 
     menuPesa.addEventListener("click", () =>{
         menu = `
-        <button>Primer Pesada</button>
+        <button id="primera">Primer Pesada</button>
         <button>Segunda Pesada</button>`
         divInfo.innerHTML = menu
+
+        const primera = document.getElementById("primera")
+
+        primera.addEventListener("click", () =>{
+        op = `
+        <div>
+            <label for="matricula">Matricula</label>
+            <input id="matricula" type="text"><br>
+            <label for="empresa">empresa</label>
+            <input id="empresa" type="text"><br>
+            <label for="producto">producto</label>
+            <input id="producto" type="text"><br>
+            <label for="chofer">chofer</label>
+            <input id="chofer" type="text"><br>
+            <label for="ejes">Cantidad de ejes</label>
+            <input id="ejes" type="number" placeholder="0"><br>
+            <label for="observaciones">observaciones</label>
+            <input id="observaciones" type="text"><br>
+        </div>
+        <div>
+            <input type="number">kg</input>
+            <button>Comenzar Peaje</button>
+        </div>
+        `
+        miniMenu.innerHTML = op
+    })
     })
 
     config.addEventListener("click", ()=>{
@@ -49,7 +75,6 @@ document.addEventListener("DOMContentLoaded", () =>{
     historial.addEventListener("click", () =>{
         window.location.href = "historial.html"
     })
-
 
 
 })
